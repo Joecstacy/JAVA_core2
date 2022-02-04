@@ -1,0 +1,20 @@
+import java.util.*;
+public class Q7 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the number : ")	;
+		int digits=sc.nextInt();
+		int last_digit=digits%10;
+		int first_digit=0;
+		  while(digits>=10) {
+			  first_digit=digits/10;
+			  digits--;
+		  }
+		int sum= first_digit+last_digit;
+		System.out.println("sum of First digit "+first_digit+" and last digit "+last_digit+" = "+sum);
+
+	}
+
+}
