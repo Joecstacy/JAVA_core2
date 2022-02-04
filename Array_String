@@ -1,0 +1,20 @@
+import java.util.*;
+public class A1 {
+
+	public static void main(String[] args) {
+
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the no of person = ");
+		int size=sc.nextInt();
+		String [] name= new String[size];
+		
+    for(int i=0;i<size;i++) {
+			System.out.print(i+1+". Enter name =");
+			name[i]=sc.next();
+		}
+		for(int i=0;i<name.length;i++) {
+			System.out.println(i+1+ "  name ="+name[i]);
+		}
+	}
+
+}
