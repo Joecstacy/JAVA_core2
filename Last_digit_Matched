@@ -1,0 +1,14 @@
+public class Q1 {
+
+	public static void main(String[] args) {
+		int sqr=1,a;
+		System.out.println("List of numbers having similar last digit\n");
+		for(a=0;a<=10;a++) {
+			sqr=a*a;
+			int res=sqr%10;
+				if(res==a) {
+				System.out.println(a+" Square : "+sqr+ "Last Digit : "+res);
+			}
+		}
+	}
+}
