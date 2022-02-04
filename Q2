@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Lec3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		Scanner scan=new Scanner(System.in);
+		int a=scan.nextInt();
+		int b=scan.nextInt();
+		
+		// output using printf funtion
+		System.out.printf("%-25s","1: Addition");
+		System.out.printf("%d%n",(a+b));
+		System.out.printf("%-25s","2: Multiplication");
+		System.out.printf("%d%n",(a*b));
+		System.out.printf("%-25s","3: Division");
+		System.out.printf("%d%n",(a/b));
+		System.out.printf("%-25s","4: Substraction");
+		System.out.printf("%d%n",(a-b));
+		System.out.printf("%-25s","5: Modulo");
+		System.out.printf("%d%n",(a%b));
+		}
+    }
