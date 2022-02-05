@@ -1,0 +1,36 @@
+import java.util.*;
+public class Lec3q3 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+// 3. Perform the mathematical operations with the help of switch;
+		
+		Scanner scan=new Scanner(System.in);
+		
+		for(int i=1;i<6;i++) {
+		System.out.println("Enter the two numbers separating by space: ");
+		int a=scan.nextInt();
+		int b=scan.nextInt();
+		
+		System.out.println("Enter the sign of the operation : ");
+		char sign=scan.next().charAt(0);
+		
+		
+		switch(sign) {
+		case '+' : System.out.println("Addition :"+ (a+b));
+		break;
+		case '-' : System.out.println("Substraction :"+ (a-b));
+		break;
+		case '*' : System.out.println("Multiplication :"+ (a*b));
+		break;
+		case '/': System.out.println("Divition :"+ (a/b));
+		break;
+		case '%': System.out.println("Modulous :"+ (a%b));
+		break;
+		default : System.out.println("Invalid sign");
+		
+		
+		}
+	}
+
+}
+}
