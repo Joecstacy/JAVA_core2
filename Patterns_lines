@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Lec4q6 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan=new Scanner(System.in);
+		System.out.print("1. Do you want vertical lines then press 1. \n2. Do you want horizontal lines then press 2.\n=> ");
+		int n=scan.nextInt();
+		System.out.print("Enter the range : ");
+		int row=scan.nextInt();
+		
+		switch(n) {
+		case 1:for(int i=1;i<=row;i++) {
+				for(int j=1;j<=row;j++) {
+					if(i==1 || i==row ) {
+						System.out.print("_");
+					} else{
+						System.out.print(" ");
+					}
+					}System.out.println();
+				}
+		break;
+		case 2: for(int i=1;i<=row;i++) {
+				for(int j=1;j<=row;j++) {
+					if(j==1 || j==row ) {
+						System.out.print("|");
+					} else{
+						System.out.print(" ");
+					}
+				}System.out.println();
+				}
+		break;
+		default: System.out.println(" Invalid Input! ");
+		
+	}}
+}
